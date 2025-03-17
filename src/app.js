@@ -14,16 +14,15 @@ window.onload = function() {
     }
   }
 
-  document.getElementById("domain-list").innerHTML = domains
-  .map(domain => `<li>${domain}</li>`)
-  .join("");
-};
-//   let domainList = document.getElementById("domain-list");
+let domainList = document.getElementById('domain-list');
+domains.forEach(domain => {
+  let listItem = document.createElement('li');
+  listItem.textContent = domain;
+  domainList.appendChild(listItem);
+});
 
-//   domainList.innerHTML = ""; 
-//   domains.forEach(domain => {
-//     let listItem = document.createElement("li"); 
-//     listItem.textContent = domain; 
-//     domainList.appendChild(listItem); 
-//   });
-// };
+console.log("Generated Domain Names:");
+domains.forEach(domain => {
+  console.log(domain);
+});
+};
