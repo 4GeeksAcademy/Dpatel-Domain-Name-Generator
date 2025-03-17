@@ -1,10 +1,9 @@
 window.onload = function() {
-  // Arrays containing word categories
   let pronoun = ['pro', 'epic', 'shadow'];
   let adj = ['fast', 'stealth', 'legendary'];
   let noun = ['gamer', 'warrior', 'arena', 'clan', 'quest'];
 
-  // Generating domain names
+
   let domains = [];
   for (let i = 0; i < pronoun.length; i++) {
     for (let j = 0; j < adj.length; j++) {
